@@ -1,0 +1,19 @@
+fastmcp>=2.0
+azure-identity>=1.17
+azure-identity-broker>=1.1
+msal-extensions>=1.2      # required for TokenCachePersistenceOptions
+requests>=2.31
+python-dotenv>=1.0
+numpy>=1.26
+pandas>=2.0
+openpyxl>=3.1             # .xlsx
+xlrd>=2.0.1               # legacy .xls
+pymupdf>=1.24             # .pdf
+python-docx>=1.1          # .docx
+python-pptx>=1.0          # .pptx
+lxml>=5.0                 # .html/.aspx/.xml
+
+# --- optional -------------------------------------------------------------
+# fastembed>=0.3          # local ONNX embeddings (bge-small, 384-d, no torch)
+# pyarrow>=15             # .parquet
+# extract-msg>=0.48       # .msg (Outlook)

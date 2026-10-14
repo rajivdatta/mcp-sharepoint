@@ -1,0 +1,25 @@
+{
+  "auth": "broker",
+  "tenant_id": "<tenant-guid>",
+  "client_id": "<client-id with delegated Files.Read.All + Sites.Read.All>",
+  "login_hint": "you@contoso.com",
+  "use_default_broker_account": false,
+
+  "scope": "https://graph.microsoft.com/.default",
+  "base_url": "https://graph.microsoft.com/v1.0",
+  "hostname": "contoso.sharepoint.com",
+
+  "default_site": "Team",
+  "default_library": "Documents",
+
+  "max_download_mb": 80,
+  "timeout_seconds": 90,
+
+  "_auth_options": {
+    "broker": "Windows WAM sign-in, delegated. Results are permission-trimmed to the signed-in user. Use this.",
+    "interactive": "Browser redirect, delegated. Fallback if WAM misbehaves.",
+    "service-principal": "App-only client secret. Names client_secret_env; value lives in .env.",
+    "service-principal-cert": "App-only certificate (certificate_path + certificate_password_env).",
+    "_warning": "App-only modes read every site the app is granted. Nothing is permission-trimmed - anyone using the agent sees everything the app can see. Use Sites.Selected with explicit per-site grants if you must."
+  }
+}

@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+.auth_record.json
+data/
+*.db
+*.db-wal
+*.db-shm
+config.json
+
+*.pfx
+*.pem
+
+# local-only notes (tenant-specific, never publish)
+NOTES.local.md
+IT-REQUEST.md
